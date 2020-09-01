@@ -3,4 +3,4 @@ id: getting-started
 title: Getting Started
 ---
 
-My new content here..
+My new coantent here..
