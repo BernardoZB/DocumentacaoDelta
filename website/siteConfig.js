@@ -30,17 +30,18 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "test-site",
-  organizationName: "facebook",
+  projectName: "Delta trader Documentação",
+  organizationName: "BernardoZB",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
+  scrollToTop: true,
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "doc1", label: "Docs" },
+    { doc: "doc1", label: "Documentação" },
     { doc: "doc4", label: "API" },
-    { page: "help", label: "Help" },
+    { page: "help", label: "Ajuda" },
     { blog: true, label: "Blog" },
   ],
 
@@ -49,8 +50,8 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: "img/delta-logo.png",
-  footerIcon: "img/delta-logo.png",
-  favicon: "img/delta-logo.png",
+  footerIcon: "img/download.png",
+  favicon: "img/download.png",
 
   /* Colors for website */
   colors: {
@@ -73,7 +74,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `© 2019 Delta Serviços Financeiros LTDA. Todos os direitos reservados`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -110,9 +111,7 @@ const siteConfig = {
     indexName: "my-index-name",
     appId: "app-id", // Optional, if you run the DocSearch crawler on your own
     algoliaOptions: {}, // Optional, if provided by Algolia
-    algoliaOptions: {
-      facetFilters: ["language:LANGUAGE", "version:VERSION"],
-    },
+    algoliaOptions: {},
   },
 };
 
