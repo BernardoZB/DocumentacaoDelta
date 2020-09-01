@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Test Site", // Title for your website.
+  title: "", // Title for your website.
   tagline: "A website for testing",
   url: "https://your-docusaurus-test-site.com", // Your website URL
   baseUrl: "/", // Base URL for your project */
@@ -49,7 +49,7 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/delta-logo.png",
+  headerIcon: "img/logo-delta-01.svg",
   footerIcon: "img/download.png",
   favicon: "img/download.png",
 

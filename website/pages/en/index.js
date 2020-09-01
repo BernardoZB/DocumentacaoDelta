@@ -13,6 +13,14 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+const PromoSection = (props) => (
+  <div className="section promoSection">
+    <div className="promoRow">
+      <div className="pluginRowBlock">{props.children}</div>
+    </div>
+  </div>
+);
+
 class HomeSplash extends React.Component {
   render() {
     const { siteConfig, language = "" } = this.props;
@@ -40,14 +48,6 @@ class HomeSplash extends React.Component {
         {props.title}
         <small>{props.tagline}</small>
       </h2>
-    );
-
-    const PromoSection = (props) => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
     );
 
     const Button = (props) => (
@@ -93,45 +93,7 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{ textAlign: "center" }}
-      >
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              "To make your landing page more attractive, use illustrations! Check out " +
-              "[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. " +
-              "The illustrations you see on this page are from unDraw.",
-            image: `${baseUrl}img/download.png`,
-            imageAlign: "left",
-            title: "Wonderful SVG Illustrations",
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              "This is another description of how this project is useful",
-            image: `${baseUrl}img/download.png`,
-            imageAlign: "right",
-            title: "Description",
-          },
-        ]}
-      </Block>
-    );
+    // const TryOut = () => <Block>{[{}]}</Block>;
 
     const LearnHow = () => (
       <Block background="light">
@@ -152,60 +114,47 @@ class Index extends React.Component {
         {[
           {
             content: "This is the content of my feature",
-            image: `img/download.png`,
+            image: `img/zeus_logo-05.png`,
             imageAlign: "top",
-            title: "Teste 1",
+            title: "DeltaTrader Zeus",
           },
           {
             content: "The content of my second feature",
             image: `${baseUrl}img/download.png`,
             imageAlign: "top",
-            title: "teste 2",
+            title: "MetaTrader 5",
+          },
+          {
+            content: "The content of my second feature",
+            image: `${baseUrl}img/BoletaDelta-01.png`,
+            imageAlign: "top",
+            title: "Boleta DeltaTrader",
+          },
+          {
+            content: "The content of my second feature",
+            image: `${baseUrl}img/download.png`,
+            imageAlign: "top",
+            title: "Robôs MT5",
           },
         ]}
       </Block>
     );
-
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter((user) => user.pinned)
-        .map((user) => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = (page) =>
-        baseUrl + (language ? `${language}/` : "") + page;
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl("users.html")}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
-      );
-    };
+    const Button_1 = () => (
+      <Block layout="fourColumn">
+        <button>TESTE</button>
+        <button>TESTE</button>
+        <button>TESTE</button>
+        <button>TESTE</button>
+      </Block>
+    );
 
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
+          <Button_1 />
           <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
         </div>
       </div>
     );
