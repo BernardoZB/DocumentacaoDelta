@@ -60,14 +60,14 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
-        <div className="inner">
+        <div>
+          <Logo
+            className="img-titulo"
+            img_src={`${baseUrl}img/Logos_Docs-05.svg`}
+          />
+        </div>
+        <div className=" inicio inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl("doc1.html")}>Example Link</Button>
-            <Button href={docUrl("doc2.html")}>Example Link 2</Button>
-          </PromoSection>
         </div>
       </SplashContainer>
     );
@@ -96,55 +96,52 @@ class Index extends React.Component {
     // const TryOut = () => <Block>{[{}]}</Block>;
 
     const LearnHow = () => (
-      <Block background="light">
+      <Block className="artigos">
         {[
           {
             content:
-              "Each new Docusaurus project has **randomly-generated** theme colors.",
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              "Artigos sobre mercado financeiro, robôs de investimentos, MetaTrader 5 e muito mais...",
+            image: `${baseUrl}img/Logos_Docs-04.svg`,
             imageAlign: "right",
-            title: "Randomly Generated Theme Colors",
+            title: "Leia Nossos Artigos",
           },
         ]}
       </Block>
     );
 
     const Features = () => (
-      <Block layout="fourColumn">
+      <Block layout="fourColumn" background="light">
         {[
           {
-            content: "This is the content of my feature",
-            image: `img/zeus_logo-05.png`,
+            content: "Tire suas dúvidas sobre a plataforma MetaTrader 5.",
+            image: `${baseUrl}img/Logos_Docs-03.svg`,
+            imageAlign: "top",
+            title: "MetaTrader 5",
+            href: "https",
+          },
+          {
+            content:
+              "Veja como instalar, configurar e utilizar todas as funcionalidades",
+            image: `img/Logos_Docs-02.svg`,
             imageAlign: "top",
             title: "DeltaTrader Zeus",
           },
+
           {
-            content: "The content of my second feature",
-            image: `${baseUrl}img/download.png`,
-            imageAlign: "top",
-            title: "MetaTrader 5",
-          },
-          {
-            content: "The content of my second feature",
-            image: `${baseUrl}img/BoletaDelta-01.png`,
-            imageAlign: "top",
-            title: "Boleta DeltaTrader",
-          },
-          {
-            content: "The content of my second feature",
-            image: `${baseUrl}img/download.png`,
+            content:
+              "Dicas e tutoriais sobre robôs de investimentos para MetaTrader 5.",
+            image: `${baseUrl}img/robos_mt5-01.svg`,
             imageAlign: "top",
             title: "Robôs MT5",
           },
+          {
+            content:
+              "Sabia como instalar e utilizar a boleta mais completa do mercado.",
+            image: `${baseUrl}img/Logos_Docs-01.svg`,
+            imageAlign: "top",
+            title: "Boleta DeltaTrader",
+          },
         ]}
-      </Block>
-    );
-    const Button_1 = () => (
-      <Block layout="fourColumn">
-        <button>TESTE</button>
-        <button>TESTE</button>
-        <button>TESTE</button>
-        <button>TESTE</button>
       </Block>
     );
 
@@ -153,12 +150,10 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <Button_1 />
           <LearnHow />
         </div>
       </div>
     );
   }
 }
-
 module.exports = Index;

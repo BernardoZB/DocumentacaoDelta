@@ -21,16 +21,16 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "", // Title for your website.
-  tagline: "A website for testing",
-  url: "https://your-docusaurus-test-site.com", // Your website URL
+  title: "Documentação da DeltaTrader", // Title for your website.
+  tagline: "Encontre informações sobre nossos produtos",
+  url: "https://docs.deltatrader.com.br/", // Your website URL
   baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "Delta trader Documentação",
+  projectName: "DeltaTrader Documentação",
   organizationName: "BernardoZB",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -39,39 +39,27 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "doc1", label: "Documentação" },
-    { doc: "doc4", label: "API" },
-    { page: "help", label: "Ajuda" },
-    { blog: true, label: "Blog" },
+    { doc: "doc1", label: "MT5" },
+    { doc: "doc1", label: "Zeus" },
+    { doc: "doc4", label: "Robôs" },
+    { page: "help", label: "Boleta" },
+    { blog: true, label: "Artigos" },
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/logo-delta-01.svg",
-  footerIcon: "img/download.png",
+  headerIcon: "img/Logos_Docs-06.svg",
   favicon: "img/download.png",
 
   /* Colors for website */
   colors: {
     primaryColor: "#1B245B",
-    secondaryColor: "#ffff",
+    secondaryColor: "#F7F7F7",
   },
 
   /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `© 2019 Delta Serviços Financeiros LTDA. Todos os direitos reservados`,
