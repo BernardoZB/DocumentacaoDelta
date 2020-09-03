@@ -31,7 +31,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: "DeltaTrader Documentação",
-  organizationName: "BernardoZB",
+  organizationName: "DeltaTrader",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -40,9 +40,9 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: "doc1", label: "MT5" },
-    { doc: "doc1", label: "Zeus" },
-    { doc: "doc4", label: "Robôs" },
-    { page: "help", label: "Boleta" },
+    { doc: "doc4", label: "Zeus" },
+    { doc: "doc2", label: "Robôs" },
+    { doc: "boletadelta", label: "Boleta" },
     { blog: true, label: "Artigos" },
   ],
 
@@ -56,7 +56,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: "#1B245B",
-    secondaryColor: "#F7F7F7",
+    secondaryColor: "#6d6d6d",
   },
 
   /* Custom fonts for website */

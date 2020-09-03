@@ -1,12 +1,16 @@
 {
-  "docs": {
-    "Docusaurus": ["doc1", "teste"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"],
-    "Getting Started": ["getting-started"],
-    "Parte um": ["parteum"]
+  "MetaTrader 5": {
+    "MetaTrader 5": ["doc1"],
+    "MetaTrader 5 part2": ["getting-started"]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "DeltaTrader Zeus": {
+    "DeltaTrader Zeus": ["doc4"],
+    "DeltaTrader Zeus parte2": ["doc5"]
+  },
+  "Robôs DeltaTrader": {
+    "Robôs DeltaTrader": ["doc2", "doc3"]
+  },
+  "Boleta DeltaTrader": {
+    "Boleta DeltaTrader": ["boletadelta"]
   }
 }

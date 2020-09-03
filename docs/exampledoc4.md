@@ -1,6 +1,6 @@
 ---
 id: doc4
-title: Other Document
+title: DeltaTrader Zeus
 ---
 
 this is another document

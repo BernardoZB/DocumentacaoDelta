@@ -110,18 +110,19 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <Block layout="fourColumn" background="light">
+      <Block className="itens" id="try" layout="fourColumn" background="light">
         {[
           {
-            content: "Tire suas dúvidas sobre a plataforma MetaTrader 5.",
+            content:
+              "Tire suas dúvidas sobre a plataforma MetaTrader 5.<br><br><span style='text-decoration: underline'>[**Leia mais**](/docs/doc1) </span>",
             image: `${baseUrl}img/Logos_Docs-03.svg`,
             imageAlign: "top",
             title: "MetaTrader 5",
-            href: "https",
+            href: "#doc1",
           },
           {
             content:
-              "Veja como instalar, configurar e utilizar todas as funcionalidades",
+              "Veja como instalar, configurar e utilizar todas as funcionalidades.<br><br> <span style='text-decoration: underline'>[**Leia mais**](/docs/doc4) </span>",
             image: `img/Logos_Docs-02.svg`,
             imageAlign: "top",
             title: "DeltaTrader Zeus",
@@ -129,14 +130,14 @@ class Index extends React.Component {
 
           {
             content:
-              "Dicas e tutoriais sobre robôs de investimentos para MetaTrader 5.",
+              "Dicas e tutoriais sobre robôs de investimentos para MetaTrader 5. <br><br> <span style='text-decoration: underline'> [**Leia mais**](/docs/doc2) </span>",
             image: `${baseUrl}img/robos_mt5-01.svg`,
             imageAlign: "top",
             title: "Robôs MT5",
           },
           {
             content:
-              "Sabia como instalar e utilizar a boleta mais completa do mercado.",
+              "Sabia como instalar e utilizar a boleta mais completa do mercado.<br> <br> <span style='text-decoration: underline'> [**Leia mais**](/docs/boletadelta) </span>",
             image: `${baseUrl}img/Logos_Docs-01.svg`,
             imageAlign: "top",
             title: "Boleta DeltaTrader",

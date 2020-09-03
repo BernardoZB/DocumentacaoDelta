@@ -19,14 +19,14 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <div className="footer-margin">
+          <div className="footer-margin footer-docs">
             <h5>Docs</h5>
             <a href={this.docUrl("doc1.html")}>DeltaTrader Zeus</a>
             <a href={this.docUrl("doc2.html")}>MetaTrader 5</a>
             <a href={this.docUrl("doc3.html")}>Boleta Delta</a>
             <a href={this.docUrl("doc3.html")}>Robôs de investimento</a>
           </div>
-          <div>
+          <div className="footer-delta">
             <h5>A DeltaTrader</h5>
             <a
               href="https://www.deltatrader.com.br"
@@ -43,10 +43,12 @@ class Footer extends React.Component {
               DeltaTrader Zeus
             </a>
           </div>
-          <div>
+          <div className="footer-contact">
             <h5>Suporte</h5>
-            <a>suporte@deltatrader.com.br</a>
-            <a>+55 27 3180 0317</a>
+            <a href="(mailto:suporte@deltatrader.com.br)">
+              suporte@deltatrader.com.br
+            </a>
+            <a href="tel:+1-303-499-7111">+55 27 3180 0317</a>
           </div>
         </section>
 

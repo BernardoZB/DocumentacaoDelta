@@ -1,6 +1,6 @@
 ---
 id: doc1
-title: bom dia
+title: MetaTrader 5
 sidebar_label: Example Page
 ---
 

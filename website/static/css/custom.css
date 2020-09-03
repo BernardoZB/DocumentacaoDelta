@@ -9,16 +9,62 @@
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (max-width: 800px) {}
 
-@media only screen and (max-width: 1023px) {}
+@media only screen and (max-width: 675px) {
+  .wrapper small {
+    margin-left: 10% !important;
+  }
+}
 
-@media only screen and (min-width: 1400px) {}
+@media only screen and (max-width: 735px) {
 
-@media only screen and (min-width: 1500px) {}
+  .lightBackground p {
+    margin-top: -1% !important;
+  }
+
+  .blockImage {
+    width: 100px !important;
+    padding-bottom: -20% !important;
+    margin-top: 1% !important;
+  }
+
+  .footer-margin {
+    margin-left: 0% !important;
+  }
+
+  .footer-docs {
+    margin-left: 35% !important;
+  }
+
+  .footer-delta {
+    margin-left: 35% !important;
+  }
+
+  .footer-contact {
+    margin-left: 35% !important;
+  }
+
+}
+
+@media only screen and (max-width: 865px) {
+  .inicio {
+    margin-left: 0% !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+}
 
 .footer-margin {
   margin-left: 15%;
+}
+
+.lightBackground .wrapper {
+  margin-top: 2% !important;
+}
+
+.itens {
+  padding-top: 70% !important;
 }
 
 .twoByGridBlock img {
@@ -68,11 +114,6 @@
   margin-top: -10%;
 }
 
-.btn-line {
-  background-color: #F7F7F7;
-  display: flex;
-  margin-top: -5%;
-}
 
 .headerTitleWithLogo {
   display: none !important;
@@ -101,4 +142,8 @@
 .projectLogo {
   width: 100%;
   font-size: 3px !important;
+}
+
+.nav-footer {
+  background-color: #1B245B !important;
 }
