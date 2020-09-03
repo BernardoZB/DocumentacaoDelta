@@ -77,6 +77,16 @@
 .twoByGridBlock p {
   font-size: 24px;
   width: 100%;
+  margin-left: 12% !important;
+}
+
+.titulo-art {
+  font-size: 35px;
+  margin-left: 4%;
+}
+
+.conteudo-art {
+  margin-left: -10%;
 }
 
 .blockImage {
@@ -85,8 +95,15 @@
   margin-top: -30%;
 }
 
+.titulo {}
+
 .btn-mt5 {
   margin-left: 17%;
+}
+
+.link-art {
+  text-decoration: underline;
+  margin-left: -70%;
 }
 
 .paddingBottom {
@@ -111,9 +128,15 @@
 }
 
 .lightBackground p {
-  margin-top: -10%;
+  margin-top: -7%;
 }
 
+.projectTitle {
+  margin-left: 30%;
+  text-align: left;
+}
+
+.projectTitle small {}
 
 .headerTitleWithLogo {
   display: none !important;
@@ -123,9 +146,6 @@
   margin-top: 0%;
 }
 
-.wrapper small {
-  margin-left: -13%;
-}
 
 .inicio {
   margin-left: -25%;
@@ -135,7 +155,7 @@
 
 .subtitulo {
   font-size: 17px;
-  margin-left: -9%;
+  margin-left: -5%;
   font-weight: 400;
 }
 

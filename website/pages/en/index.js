@@ -45,7 +45,7 @@ class HomeSplash extends React.Component {
 
     const ProjectTitle = (props) => (
       <h2 className="projectTitle">
-        {props.title}
+        <span className="titulo">{props.title}</span>
         <small>{props.tagline}</small>
       </h2>
     );
@@ -100,10 +100,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              "Artigos sobre mercado financeiro, robôs de investimentos, MetaTrader 5 e muito mais...",
+              "<span class='conteudo-art'>Artigos sobre mercado financeiro, robôs de <br><span class='conteudo-art'> investimentos, MetaTrader 5 e muito mais...</span> </span> <br> <br> <span class='link-art'>[**Leia mais...**](/blog/2020-09-01-teste-blog) </span>",
             image: `${baseUrl}img/Logos_Docs-04.svg`,
             imageAlign: "right",
-            title: "Leia Nossos Artigos",
+            title: "<span class='titulo-art'>Leia Nossos Artigos</span>",
           },
         ]}
       </Block>
@@ -114,7 +114,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              "Tire suas dúvidas sobre a plataforma MetaTrader 5.<br><br><span style='text-decoration: underline'>[**Leia mais**](/docs/doc1) </span>",
+              "Tire suas dúvidas sobre a plataforma MetaTrader 5.<br><br><span style='text-decoration: underline'>[**Leia mais...**](/docs/doc1) </span>",
             image: `${baseUrl}img/Logos_Docs-03.svg`,
             imageAlign: "top",
             title: "MetaTrader 5",
@@ -122,7 +122,7 @@ class Index extends React.Component {
           },
           {
             content:
-              "Veja como instalar, configurar e utilizar todas as funcionalidades.<br><br> <span style='text-decoration: underline'>[**Leia mais**](/docs/doc4) </span>",
+              "Veja como instalar, configurar e utilizar todas as funcionalidades.<br><br> <span style='text-decoration: underline'>[**Leia mais...**](/docs/doc4) </span>",
             image: `img/Logos_Docs-02.svg`,
             imageAlign: "top",
             title: "DeltaTrader Zeus",
@@ -130,14 +130,14 @@ class Index extends React.Component {
 
           {
             content:
-              "Dicas e tutoriais sobre robôs de investimentos para MetaTrader 5. <br><br> <span style='text-decoration: underline'> [**Leia mais**](/docs/doc2) </span>",
+              "Dicas e tutoriais sobre robôs de investimentos para MetaTrader 5. <br><br> <span style='text-decoration: underline'> [**Leia mais...**](/docs/doc2) </span>",
             image: `${baseUrl}img/robos_mt5-01.svg`,
             imageAlign: "top",
             title: "Robôs MT5",
           },
           {
             content:
-              "Sabia como instalar e utilizar a boleta mais completa do mercado.<br> <br> <span style='text-decoration: underline'> [**Leia mais**](/docs/boletadelta) </span>",
+              "Sabia como instalar e utilizar a boleta mais completa do mercado.<br> <br> <span style='text-decoration: underline'> [**Leia mais...**](/docs/boletadelta) </span>",
             image: `${baseUrl}img/Logos_Docs-01.svg`,
             imageAlign: "top",
             title: "Boleta DeltaTrader",

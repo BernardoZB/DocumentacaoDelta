@@ -45,7 +45,7 @@ class Footer extends React.Component {
           </div>
           <div className="footer-contact">
             <h5>Suporte</h5>
-            <a href="(mailto:suporte@deltatrader.com.br)">
+            <a href="mailto:suporte@deltatrader.com.br">
               suporte@deltatrader.com.br
             </a>
             <a href="tel:+1-303-499-7111">+55 27 3180 0317</a>

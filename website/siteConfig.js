@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Documentação da DeltaTrader", // Title for your website.
+  title: " Documentação da DeltaTrader", // Title for your website.
   tagline: "Encontre informações sobre nossos produtos",
   url: "https://docs.deltatrader.com.br/", // Your website URL
   baseUrl: "/", // Base URL for your project */
@@ -56,7 +56,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: "#1B245B",
-    secondaryColor: "#6d6d6d",
+    secondaryColor: "#0C112B",
   },
 
   /* Custom fonts for website */
