@@ -7,7 +7,17 @@
 
 /* your custom css */
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
+@media only screen and (max-width: 912px) {
+  .imageAlignSide .blockImage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1499px) {
+  .imageAlignSide .blockImage {
+    margin-top: -30%;
+  }
+}
 
 @media only screen and (max-width: 655px) {
   .navPusher {
@@ -15,7 +25,12 @@
   }
 }
 
-@media only screen and (max-width: 675px) {}
+@media only screen and (max-width: 1125px) {
+  .imageAlignSide .blockImage {
+    margin-right: 30px !important;
+    margin-top: -30%;
+  }
+}
 
 @media only screen and (max-width: 735px) {
 
@@ -46,8 +61,6 @@
   }
 
 }
-
-@media only screen and (max-width: 865px) {}
 
 .footer-margin {
   margin-left: 15%;
@@ -86,7 +99,7 @@
 .blockImage {
   max-width: 120px !important;
   padding-bottom: -40%;
-  margin-top: -30%;
+  margin-top: -23%;
 }
 
 
@@ -126,6 +139,11 @@
 
 .projectTitle {
   margin-left: 30%;
+  text-align: left;
+}
+
+.projectTitle small {
+  margin-left: 1%;
   text-align: left;
 }
 
