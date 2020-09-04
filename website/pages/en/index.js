@@ -100,7 +100,7 @@ class Index extends React.Component {
         {[
           {
             content:
-              "<span class='conteudo-art'>Artigos sobre mercado financeiro, robôs de <br><span class='conteudo-art'> investimentos, MetaTrader 5 e muito mais...</span> </span> <br> <br> <span class='link-art'>[**Leia mais...**](/blog/2020-09-01-teste-blog) </span>",
+              "<span class='conteudo-art'>Artigos sobre mercado financeiro, robôs de <br> investimentos, MetaTrader 5 e muito mais... </span> <br> <br> <span class='link-art'>[**Leia mais...**](/blog/2020-09-01-teste-blog) </span>",
             image: ` ${baseUrl}img/Logos_Docs-04.svg`,
             imageAlign: "right",
             title: "<span class='titulo-art'>Leia Nossos Artigos</span>",
