@@ -9,13 +9,13 @@
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
 
-@media only screen and (max-width: 800px) {}
-
-@media only screen and (max-width: 675px) {
-  .wrapper small {
-    margin-left: 10% !important;
+@media only screen and (max-width: 655px) {
+  .navPusher {
+    width: 655px;
   }
 }
+
+@media only screen and (max-width: 675px) {}
 
 @media only screen and (max-width: 735px) {
 
@@ -47,13 +47,7 @@
 
 }
 
-@media only screen and (max-width: 865px) {
-  .inicio {
-    margin-left: 0% !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-  }
-}
+@media only screen and (max-width: 865px) {}
 
 .footer-margin {
   margin-left: 15%;
@@ -95,7 +89,6 @@
   margin-top: -30%;
 }
 
-.titulo {}
 
 .btn-mt5 {
   margin-left: 17%;
@@ -136,7 +129,6 @@
   text-align: left;
 }
 
-.projectTitle small {}
 
 .headerTitleWithLogo {
   display: none !important;
